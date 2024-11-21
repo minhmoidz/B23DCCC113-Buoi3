@@ -1,0 +1,21 @@
+.guide-container {
+    width: 80%; /* Hoặc điều chỉnh width tùy theo nhu cầu */
+    max-width: 800px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+    padding: 20px; /* Thêm padding nếu cần */
+    text-align: center; /* Căn giữa tất cả nội dung text trong container */
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+ul {
+    list-style-type: none; /* Loại bỏ dấu chấm */
+    padding-left: 0;
+}
+
+ul li {
+    text-align: left; /* Căn trái cho các mục trong danh sách */
+}

@@ -1,0 +1,51 @@
+.sidebar {
+    display: flex;
+    flex-direction: column; /* Chuyển sang bố trí dọc */
+    justify-content: flex-start; /* Căn trên cùng */
+    align-items: flex-start; /* Căn trái */
+    padding: 2rem 1rem;
+    background-color: #101112; /* Màu nền của Sidebar */
+    color: white; /* Màu chữ */
+    height: 100vh; /* Chiều cao toàn màn hình */
+    width: 400px; /* Chiều rộng cố định */
+    position: fixed; /* Cố định sidebar */
+    top: 0; /* Đặt từ đầu màn hình */
+    left: 0; /* Đặt sát bên trái */
+}
+
+.sidebar-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2rem; /* Khoảng cách dưới tiêu đề */
+    text-align: center; /* Căn giữa tiêu đề */
+    width: 100%; /* Tiêu đề chiếm toàn bộ chiều ngang */
+}
+
+.sidebar-menu {
+    list-style-type: none; /* Xóa dấu chấm của danh sách */
+    display: flex;
+    flex-direction: column; /* Chuyển menu thành cột dọc */
+    gap: 20px; /* Khoảng cách giữa các mục */
+    padding: 0; /* Xóa padding của danh sách */
+    margin: 0; /* Xóa margin của danh sách */
+    width: 100%; /* Chiếm toàn bộ chiều rộng sidebar */
+}
+
+.sidebar-item {
+    color: rgb(251, 245, 245); /* Màu chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    padding: 10px 15px; /* Đệm trong của mỗi mục */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+    width: 100%; /* Mục menu chiếm toàn bộ chiều rộng */
+    font-size: 25px;
+}
+
+.sidebar-item:hover {
+    background-color: #151516; /* Đổi màu nền khi hover */
+}
+/* Thêm vào CSS để làm cho mục được chọn có màu xanh */
+.sidebar-item.selected {
+    background-color: #3b82f6; /* Màu xanh khi mục được chọn */
+    color: white; /* Màu chữ sáng */
+}
+

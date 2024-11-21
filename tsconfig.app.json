@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",                            // Sử dụng ESNext cho tính năng mới nhất (hoặc ES2020 nếu cần tương thích với trình duyệt cũ hơn)
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM"],      // Cập nhật lib để tương thích với ESNext
+    "module": "ESNext",                            // Cập nhật module cho tương thích ESNext
+    "skipLibCheck": true,                          // Tiết kiệm thời gian build
+    "moduleResolution": "node",                    // "node" là mặc định trong nhiều công cụ bundler (thay Bundler nếu không dùng bundler tùy chỉnh)
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": false,                               // Nếu muốn xuất ra JS
+    "jsx": "react-jsx",                            // JSX transform mới cho React 17+
+    
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+
+  "include": ["src"]
+}
